@@ -11,7 +11,7 @@ parser.add_argument("disp_x", help="The x location on your display (in pixels) o
 parser.add_argument("disp_y", help="The y location on your display (in pixels) of wher you want it to click")
 args = parser.parse_args()
 
-def multiclick_left(clicks, t=0, disp_x=1168, disp_y=603):
+def multiclick_left(clicks=10, t=0, disp_x=1168, disp_y=603):
     for i in range(0,clicks):
         mouse.move(disp_x, disp_y)
         mouse.click('left')
